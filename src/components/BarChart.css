@@ -1,0 +1,81 @@
+.barGraph {
+  display: block;
+  box-sizing: border-box;
+  height: 25rem;
+  width: 50rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.barGraph canvas+div {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.barGraph canvas+div ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.barGraph canvas+div li {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.barGraph canvas+div li span {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 3px;
+}
+
+@media (max-width: 1200px) {
+  .barGraph {
+    width: 40rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .barGraph {
+    width: 32rem;
+    height: 16rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .barGraph {
+    width: 24rem;
+    height: 12rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .barGraph {
+    width: 18rem;
+    height: 9rem;
+  }
+
+  .barGraph canvas+div ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .barGraph canvas+div li {
+    margin: 0.25rem 0;
+  }
+}

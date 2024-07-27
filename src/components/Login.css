@@ -1,0 +1,104 @@
+.login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50rem;
+  height: 27rem;
+  background-color: #fbf9f9;
+  border: 1px solid black;
+  border-radius: 0.63rem;
+  margin: 0 auto;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 17.5rem;  /* Adjust this value to make the logo larger or smaller */
+  height: auto;  /* This maintains the aspect ratio */
+}
+
+.logo-container {
+  flex: 0 0 auto;
+  padding-right: 1.9rem;
+  border-right: 1px solid #ccc;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  flex: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.form-control {
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+  width: 25.1875rem !important;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.form-label {
+  margin-left: 0.625rem;
+  font-size: 0.8125rem;
+}
+
+.forgot-password-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 48rem) {
+  .form-group-login {
+    width: 24rem;
+    height: 16rem;
+    margin-top: 10rem;
+  }
+
+  .form-control {
+    width: 22.5rem;
+  }
+}
+
+@media (max-width: 36rem) {
+  .form-group-login {
+    width: 18rem;
+    height: 12rem;
+    margin-top: 7.5rem;
+  }
+
+  .form-control {
+    width: 16.875rem;
+  }
+}
